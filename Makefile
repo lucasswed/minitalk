@@ -6,7 +6,7 @@
 #    By: lucas-ma <lucas-ma@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/09 15:07:52 by lucas-ma          #+#    #+#              #
-#    Updated: 2022/04/26 10:53:56 by lucas-ma         ###   ########.fr        #
+#    Updated: 2022/04/28 12:08:01 by lucas-ma         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,8 +43,8 @@ CF        =        -Wall -Werror -Wextra
 
 ################ FILES ##################
 
-SRCS    =        $(_SRC)client.c $(_SRC)minitalk_utils.c
-SRCS_BONUS	=	 $(_SRC)server.c $(_SRC)minitalk_utils.c
+SRCS    =        $(_SRC)client.c $(_SRC)utils.c
+SRCS_BONUS	=	 $(_SRC)server.c $(_SRC)utils.c
 OBJS    =        $(patsubst $(_SRC)%.c,$(_OBJ)%.o,$(SRCS))
 OBJS_BONUS	=	 $(patsubst $(_SRC)%.c,$(_OBJ)%.o,$(SRCS_BONUS))
 DEPS    =        libft.a
